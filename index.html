@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="mt-2">   
+      <ul>
+        <li><img src="image/download.png"  class="logo_img text " height="70px" width="100px"/></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Demos</a></li>
+        <li><a href="#">feature</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#"><button type="button" class="btn btn-outline-primary">Download</button></a></li>
+        <li><a href="#"><form action="/search" method="get">
+          <input type="text" name="query" placeholder="Search...">
+          <button type="submit">Search</button>
+        </form>
+        </a></li>
+      </ul>
+    </nav>
+    <!-- showpeice -->
+    <div class="mt-5">
+      <h1 class="center">The <b class="color">Most</b> Powerful WYSIWYG Editor</h1>
+      <h3 class="center">The #1 WYSIWYG Editor updated with new features, redesigned UI.
+      </h3>
+      <p class="center pt-4"><button type="button" class="btn btn-primary">Demos</button>
+        <button type="button" class="btn btn-outline-primary">Download</button></p>
+    </div>
+    <!-- textarea -->
+    <div class="body1">
+      <div class="section">
+        <div class="row">
+          <div class="col">
+            <div class="first box">
+            <input type="number" 
+                   id="font-size" 
+                   min="1"
+                   max="100"
+                   value="16"
+                   onchange="f1(this)">  
+            </div>
+            <div class="second box">
+              <button type="button" onclick="f2(this)">
+              <i class="fa solid fa-bold"></i>
+              </button>
+              <button type="button" onclick="f3(this)">
+                <i class="fa solid fa-italic"></i>
+                </button>
+                <button type="button" onclick="f4(this)">
+                  <i class="fa solid fa-underline"></i>
+                  </button>
+            </div>
+            <div class="third box">
+              <button type="button" onclick="f5(this)">
+              <i class="fa-solid fa-align-left"></i>
+            </button>
+            <button type="button" onclick="f6(this)">
+              <i class="fa-solid fa-align-center"></i>
+            </button>
+            <button type="button" onclick="f7(this)">
+              <i class="fa-solid fa-align-right"></i>
+            </button>
+            </div>
+            <div class="fourth box">
+              <button type="button" onclick="f8(this)">
+              Aa
+              </button>
+              <button type="button" onclick="f9(this)">
+                <i class="fa-solid fa-text-slash"></i>
+                </button>
+                <input type="color" onchange="f10(this)">
+            </div>
+          </div>
+          <br>
+          <br>
+           <div class="col1 mt-3">
+            <textarea  id="textarea" placeholder="Your Text here">
+            </textarea>
+           </div>
+        </div> 
+       </div>
+      </div>
+    
+    <!-- picture -->
+    <div class="picture mt-5">
+      <div class="under mx-5"><img src="image/Sony_logo.svg" class="sony" height="70px" width="90px"></div>
+      <div class="under mx-5"><img src="image/intel.svg" class="intel"height="60px" width="110px"></div>
+      <div class="under mx-5"><img src="image/microsoft.svg" class="microsoft"height="50px" width="90px"></div>
+      <div class="under mx-5"><img src="image/ibm.svg" class="ibm"height="50px" width="95x"></div>
+      <div class="under mx-5"><img src="image/nokia.svg" class="nokia"height="70px" width="90px"></div>
+      <div class="under mx-5"><img src="image/Siemens.svg" class="siemenss"height="70px" width="90px"></div>
+    </div>
+    <!-- why -->
+    <div class="mt-5">
+      <p class="center"><button type="button" class="btn btn-outline-success">Why rich Text editor?</button></p>
+      <h2 class="center color">Full-featured WYSIWYG HTML editor</h2>
+      <h4 class="center">A WYSIWYG HTML editor with powerful APIs and documentation.</h4>
+    </div>
+    <!-- powerfull -->
+    <div class="back mt-5">
+      <h1 class="method center pt-5">Your Powerful rich text editor</h1>
+      <p class="center"><button type="button" class="btn btn-outline-light">Demos</button></p>
+    </div>
+    <!-- last -->
+    <div class="bg-black d-flex justify-content-around mt-4">
+      <p class="text-white"> RichTextEditor <br>
+        198 Kennedy Street West <br>
+        Aurora, ON L4G 2L7 <br>
+        Canada <br>
+        support@richtexteditor.com</p>
+        <span>
+          <p class="text-white">Resources <br>
+            Pricing <br>
+            Support Ticket <br>
+            Company <br>
+            Document <br>
+            Customers <br>
+            Client Center</p>
+        </span>
+        <span>
+          <p class="text-white">Products <br>
+            Free Chat Software <br>
+            Free Video Chat Room <br>
+            Javascript Obfuscator <br>
+            Free .NET obfuscator <br>
+            On-premises Live Chat <br>
+            Ajax Uploader <br>
+            ASP Uploader <br>
+            PHP File Uploader</p>
+        </span>
+        <span>
+          <p class="text-white">Products <br>
+            Javascript Rich Text Editor <br>
+            Rich Text Editor for .NET <br>
+            Rich Text Editor for PHP <br>
+            Rich Text Editor for ASP</p>
+        </span>
+    </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+    <script src="index.js"></script>
+</body>
+</html>
